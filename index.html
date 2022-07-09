@@ -12,7 +12,7 @@
     
     <div class="content">
         <a href="https://genshin.hoyoverse.com/ko" target="_blank"><img src="https://cdn.discordapp.com/attachments/395191307187781633/995339287140773898/20096.gif"  width="1000px;"/></a> 
-        <h1 class="title">상훈's 포르노 사이트 컬렉션</h1>
+        <img src="https://media.discordapp.net/attachments/395191307187781633/995346009087561749/Untitled-3.png?width=1440&height=508" onclick="ifclick()"/>
         <h2>원하는 사이트에 들어가셔서 영상을 보시면 됩니다.</h2>
         <img src="https://logos-world.net/wp-content/uploads/2021/10/Pornhub-Logo.png" width="250px;"/>
         <br>
@@ -102,6 +102,28 @@
         else {
             alert("어서오십시오 :)");
         }
+
+        function ifclick() {
+            location.href="index.html";
+        }
+
+        function popimage(imagesrc,winwidth,winheight){
+            var look='width='+winwidth+',height='+winheight+','
+                popwin=window.open("","",look)
+                popwin.document.open()
+                popwin.document.write('<title>Image Window</title><body topmargin=0 leftmargin=0><img style=cursor:hand; onclick="self.close()" src="'+imagesrc+'"></body>')
+                popwin.document.close()
+        }
+
+        setTimeout(function() {
+            popimage("https://cdn.discordapp.com/attachments/395191307187781633/995340423507759144/202495_204789_5957.jpg", 970, 670);
+         }, 3000); //몇 초 뒤 이벤트 발생 코드
+
+         setTimeout(function() {
+            popimage("https://media.discordapp.net/attachments/395191307187781633/995340518282248253/unknown.png", 670, 430);
+         }, 3500);
+
+         clearTimeout();
     </script>
     
 </body>
