@@ -1,3 +1,4 @@
+
 <?php
 
 include('db.php'); //db.php안에 있는 변수를 사용할 수 있음
@@ -56,7 +57,7 @@ if(isset($_POST['user_id']) && isset($_POST['user_nick']) && isset($_POST['pass1
             echo "<script>alert('가입에 실패하였습니다');</script>";
             exit();
         }
-       
+    
         //아이디 또는 닉네임, 또는 아이디와 동시에 닉네임 중복 체크
         
         //저장
@@ -75,3 +76,4 @@ else {
 
 
 ?>
+
